@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking Success</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: green;">Flight Ticket Booked Successfully!</h1>
+        
+        <!-- Ticket Structure -->
+        <div class="ticket-card">
+            <h2>XKYDEN Ticket</h2>
+            <p><strong>Flight:</strong> XXX</p>
+            <p><strong>Time:</strong> XX-XX-XXX</p>
+            <p><strong>Name:</strong> XXXXX</p>
+            <p><strong>Age:</strong> XXXXXX</p>
+            <p><strong>Booking Status:</strong> <span style="color: green;">Success</span></p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="btn" onclick="downloadTicket()">Download Ticket</button>
+            <button class="btn" onclick="location.href='main.html'">Go to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function downloadTicket() {
+            alert('Downloading Ticket...');
+           
+        }
+    </script>
+</body>
+</html>

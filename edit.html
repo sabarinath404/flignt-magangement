@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 >Edit Profile</h1>
+            <div class="buttons">
+                <button class="btn" onclick="location.href='profile.html'">back</button>
+            </div>
+        </div>
+
+        <form action="edit-success.html" method="GET">
+            <div class="profile-content">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Alex Hormozi"><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" value="123 Main St, City, America"><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" value="+123 456 7890"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="alexhormozi.doe@example.com"><br>
+
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" value="Male"><br>
+
+                <label for="passport">Passport Number:</label>
+                <input type="text" id="passport" name="passport" value="A12345678"><br>
+
+                <label for="aadhar">Aadhar Number:</label>
+                <input type="text" id="aadhar" name="aadhar" value="1234 5678 9012"><br>
+
+                <button type="submit" class="btn">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

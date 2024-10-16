@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hotel.css">
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Hotel Booking</h1>
+        
+        <div class="button-container">
+            <a class="home-button" href="main.html">Home</a>
+        </div>
+
+        <form class="booking-form">
+            <label for="country">Select Country:</label>
+            <select id="country" name="country">
+                <option value="" disabled selected>Select a country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+
+            <label for="hotel">Select Hotel:</label>
+            <select id="hotel" name="hotel">
+                <option value="" disabled selected>Select a hotel</option>
+                <option value="hotel1">Hotel 1</option>
+                <option value="hotel2">Hotel 2</option>
+                <option value="hotel3">Hotel 3</option>
+                <option value="hotel4">Hotel 4</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="members">Number of Members:</label>
+            <select id="members" name="members">
+                <option value="" disabled selected>Select number of members</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button onclick="window.location.href='hotel_success.html';" type="submit" class="booking-button">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

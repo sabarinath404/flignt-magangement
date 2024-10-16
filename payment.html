@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <button class="back-button" onclick="window.history.back();">Back</button>
+
+        <form id="paymentForm">
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="paymentType" value="debit" checked> Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="paymentType" value="credit"> Credit Card
+                </label>
+            </div>
+
+            <div class="amount">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" value="50000" readonly>
+            </div>
+
+            <div class="card-details">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+                
+                <label for="cvv">CVV Number:</label>
+                <input type="text" id="cvv" required>
+            </div>
+
+            <button type="button" class="pay-button" onclick="location.href='flight_success.html'">Pay</button>
+        </form>
+
+        
+    </div>
+
+   
+</body>
+</html>

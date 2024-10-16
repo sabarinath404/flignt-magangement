@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="boo-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book a Flight</h1>
+            <button class="btn back-btn" onclick="window.history.back()">Back</button>
+        </div>
+
+        <div class="select-section">
+            <div class="select-box">
+                <label for="start-country">From:</label>
+                <select id="start-country">
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+            
+            <div class="label-to">
+                <p>To</p>
+            </div>
+            
+            <div class="select-box">
+                <label for="dest-country">To:</label>
+                <select id="dest-country">
+                    <option value="Canada">Canada</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+
+            <label for="passport">Passport Number:</label>
+            <input type="text" id="passport" placeholder="Enter your passport number">
+        </div>
+
+        <div class="radio-section">
+            <label>Flight Type:</label>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" name="flight-type" value="AC"> AC
+                </label>
+                <label>
+                    <input type="radio" name="flight-type" value="Non-AC"> Non-AC
+                </label>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <a href="payment.html" class="btn payment-btn">Proceed to Payment</a>
+
+        </div>
+    </div>
+</body>
+</html>
